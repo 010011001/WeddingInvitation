@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Reymark & Khea Jean</h1>
+            <div class="hero-date">October 21, 2026 | Windsong Tagaytay</div>
+            <div class="hero-subtitle">It's a Forever Thing</div>
+        </div>
+    </header>
+    <div class="container">
+        <nav class="section-nav">
+            <button onclick="showSection('home')">Home</button>
+            <button onclick="showSection('story')">Our Story</button>
+            <button onclick="showSection('guest')">Guest</button>
+            <button onclick="showSection('rsvp')">RSVP</button>
+        </nav>
+        <div class="main-content">
+            <div id="home" class="section">
+                <h2>Welcome</h2>
+                <p>Join us in celebrating our special day.</p>
+            </div>
+            <div id="story" class="section" style="display:none;">
+                <h2>Our Story</h2>
+                <p>Once upon a time, two hearts met and began a journey of love, laughter, and adventure. (Add your story here)</p>
+            </div>
+            <div id="guest" class="section" style="display:none;">
+                <h2>Guest</h2>
+                <ul class="details-list">
+                    <li><strong>Ceremony:</strong> October 21, 2026, 3:00 PM, Windsong Tagaytay</li>
+                    <li><strong>Dinner & Reception:</strong> Immediately following the ceremony</li>
+                    <li><strong>After Party:</strong> Tentative, All are welcome</li>
+                    <li><strong>Attire:</strong> Black and White Attire</li>
+                    <li><strong>Note:</strong> As much as we love your little ones, we kindly request this celebration be adults</li>
+                </ul>
+            </div>
+            <div id="rsvp" class="section" style="display:none;">
+                <h2>RSVP</h2>
+                <p>Please let us know if you can make it!</p>
+                <a href="#" class="rsvp-link">RSVP Online</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Contact us at: <a href="mailto:your@email.com">reymark.fallorina@gmail.com</a></p>
+        <p>&copy; 2026 by Reymark and Khea Jean</p>
+    </footer>
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('.section').forEach(sec => sec.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+            document.querySelectorAll('.section-nav button').forEach(btn => btn.classList.remove('active'));
+            const btn = Array.from(document.querySelectorAll('.section-nav button')).find(b => b.getAttribute('onclick').includes(id));
+            if (btn) btn.classList.add('active');
+        }
+        // Set initial active button
+        showSection('home');
+    </script>
+</body>
+</html>
