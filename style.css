@@ -7,7 +7,7 @@
     font-style: normal;
 }
 body {
-    font-family: 'OASIS brown Austin Sans', 'Segoe UI', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background: #fff;
     margin: 0;
     padding: 0;
@@ -106,8 +106,9 @@ h2 {
     padding: 2rem;
     position: relative;
 }
-.section h2 {
-    font-family: 'Wasted Vindey', cursive, 'Segoe UI', Arial, sans-serif;
+.section h2,
+.hero-title {
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     color: #222;
     margin-bottom: 1rem;
@@ -137,7 +138,7 @@ h2 {
     padding: 2.5rem 0 1.5rem 0;
     text-align: center;
     position: relative;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .hero-title {
     font-family: 'Wasted Vindey', cursive, 'Segoe UI', Arial, sans-serif;
