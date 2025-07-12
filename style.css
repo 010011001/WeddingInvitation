@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Wasted+Vindey&display=swap');
+@font-face {
+    font-family: 'OASIS brown Austin Sans';
+    src: url('fonts/OASISbrownAustinSans.woff2') format('woff2'),
+         url('fonts/OASISbrownAustinSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
-    font-family: 'Wasted Vindey', cursive, 'Segoe UI', Arial, sans-serif;
+    font-family: 'OASIS brown Austin Sans', 'Segoe UI', Arial, sans-serif;
     background: #fff;
     margin: 0;
     padding: 0;
